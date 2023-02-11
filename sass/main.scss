@@ -1,0 +1,20 @@
+// utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// base styles
+@import './base/common';
+@import './base/reset';
+
+// components styles
+@import './components/container';
+@import './components/section';
+@import './components/header';
+@import './components/banner';
+@import './components/advantages';
+@import './components/boxes';
+@import './components/team';
+@import './components/customers';
+@import './components/footer';
+@import './components/portfolio';
+@import './components/modal';

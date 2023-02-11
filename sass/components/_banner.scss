@@ -1,0 +1,54 @@
+.banner {
+  background-image: linear-gradient(
+      var(--background-gradient-color),
+      var(--background-gradient-color)
+    ),
+    url(../images/main-background.jpg);
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-main-text-color);
+  max-width: 696px;
+  margin: 0 auto;
+}
+
+.banner_btn {
+  width: 216px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background: var(--hover-button-color);
+  box-shadow: 0px 4px 4px var(--shadow-main-color);
+  border-radius: 4px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  margin: 30px auto 0;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--secondary-main-text-color);
+  cursor: pointer;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
+
+  &:hover,
+  &:focus {
+    background: var(--secondary-hover-button-color);
+    text-shadow: none;
+  }
+}

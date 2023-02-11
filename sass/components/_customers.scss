@@ -1,0 +1,38 @@
+.customers .slogan {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-button-color);
+  margin-bottom: 50px;
+}
+
+.customers .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customers .link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--svg-button-color);
+  border: 1px solid var(--svg-button-color);
+  border-radius: 4px;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-button-color);
+    border: 1px solid var(--hover-button-color);
+  }
+}
+
+.customers .svg-logo {
+  fill: currentColor;
+}
