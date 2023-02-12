@@ -4,20 +4,38 @@
 
 .team .our-team {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-button-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-top: 34px;
+  }
 }
 
 .main-team {
-  display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-top: 50px;
+  }
 }
 
-.main-team .item + .item {
-  margin-left: 30px;
+.main-team .item:not(:last-child) {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 30px;
+  }
 }
 
 .team .item {
@@ -26,13 +44,35 @@
     0px 1px 1px var(--team-box-shadow),
     0px 2px 1px var(--team-shadow-secondary-color);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-bottom: 34px;
+  }
+}
+
+.team .image {
+  width: 450px;
+  height: 460px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .team .name {
   font-weight: 500;
   font-size: 16px;
-
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-button-color);
@@ -53,13 +93,14 @@
 }
 
 .main-team .svg-icons {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .main-team .svg-items {
   display: flex;
   list-style: none;
-  margin-left: 32px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 206px;
 }
 
