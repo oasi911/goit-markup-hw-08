@@ -18,29 +18,42 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <nav class="container navigation">
+    <header class="header">
+      <div class="header-main container">
         <a class="header-logo" href="./"
           >Web<span class="header-logo header-logo--second-part"
             >Studio</span
           ></a
         >
-        <ul class="navigation-list global-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link current" href="index.html"
-              >Студія</a
-            >
-            <div class="navigation-list__decoration current"></div>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="portfolio.html">Портфоліо</a>
-            <div class="navigation-list__decoration"></div>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="./">Контакти</a>
-            <div class="navigation-list__decoration"></div>
-          </li>
-        </ul>
+        <button
+          class="header__menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+        >
+          <svg class="header__menu-svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="navigation-list global-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link current" href="index.html"
+                >Студія</a
+              >
+              <div class="navigation-list__decoration current"></div>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="portfolio.html"
+                >Портфоліо</a
+              >
+              <div class="navigation-list__decoration"></div>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="./">Контакти</a>
+              <div class="navigation-list__decoration"></div>
+            </li>
+          </ul>
+        </nav>
         <address class="header-address">
           <ul class="address-list global-list">
             <li class="address-list__item">
@@ -61,20 +74,20 @@
             </li>
           </ul>
         </address>
-      </nav>
-    </header> -->
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="banner">
+      <section class="banner">
         <div class="container">
           <h1 class="banner__text">ЕФЕКТІВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="banner_btn" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="advantages section">
+      <section class="advantages section">
         <div class="container">
           <h2 class="advantages__slogan visually-hidden">Наші переваги</h2>
           <ul class="advantages__list global-list">
@@ -127,9 +140,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="boxes section">
+      <section class="boxes section">
         <div class="container">
           <h2 class="slogan">Чим ми займаємося</h2>
           <ul class="main-boxes global-list">
@@ -162,9 +175,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="our-team">Наша команда</h2>
           <ul class="main-team global-list">
@@ -349,9 +362,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="slogan">Постійні клієнти</h2>
           <div class="customers-logo">
@@ -431,7 +444,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer class="footer">
@@ -501,14 +514,21 @@
         </div>
         <div class="mailing">
           <h3 class="text">Підпишіться на розсилку</h3>
-          <label class="label">
-            <input class="input" name="mail" type="text" placeholder="E-mail" />
-          </label>
-          <button class="button" type="submit">
-            Підписатися<svg class="icons" width="24" height="24">
-              <use class="icon" href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
+          <form class="form">
+            <label class="label">
+              <input
+                class="input"
+                name="mail"
+                type="text"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="button" type="submit">
+              Підписатися<svg class="icons" width="24" height="24">
+                <use class="icon" href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -566,5 +586,6 @@
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>

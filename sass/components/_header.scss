@@ -2,30 +2,68 @@
   outline: var(--header-outline) solid 1px;
 }
 
-.navigation {
+.header-main {
   display: flex;
-  align-items: center;
+}
+
+.navigation {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header-logo {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--hover-button-color);
-  padding-top: 24.5px;
-  padding-bottom: 24.5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    margin-right: 44px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    margin-right: 92px;
+  }
 
   &--second-part {
     color: var(--text-main-color);
   }
 }
 
+.header__menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .navigation-list {
   display: flex;
-  margin-left: 93px;
 }
 
 .navigation-list__item {
@@ -73,14 +111,26 @@
 
 .header-address {
   margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .address-list {
-  display: flex;
-}
-
-.address-list__item + .address-list__item {
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .address-item {
@@ -91,6 +141,15 @@
   text-decoration: none;
   color: var(--secondary-text-color);
   font-style: normal;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
 }
 
 .address-item__icon {

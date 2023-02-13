@@ -98,40 +98,99 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .header {
   outline: var(--header-outline) solid 1px;
 }
 
+.header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--hover-button-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    margin-right: 44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+    margin-right: 92px;
+  }
+}
+.header-logo--second-part {
+  color: var(--text-main-color);
+}
+
+.header__menu {
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
 }
-
-.header-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--hover-button-color);
-  padding-top: 24.5px;
-  padding-bottom: 24.5px;
-}
-.header-logo--second-part {
-  color: var(--text-main-color);
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
 }
 
 .navigation-list__item {
@@ -183,16 +242,48 @@ textarea {
 
 .header-address {
   margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.address-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
 }
-
-.address-list__item + .address-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .address-item {
@@ -203,6 +294,18 @@ textarea {
   text-decoration: none;
   color: var(--secondary-text-color);
   font-style: normal;
+}
+@media screen and (min-width: 768px) {
+  .address-item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-item {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
 }
 
 .address-item__icon {
@@ -360,7 +463,6 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 10px;
-  padding-bottom: 30px;
 }
 
 .advantages-item__logo {
@@ -453,7 +555,6 @@ textarea {
   .team .our-team {
     font-size: 36px;
     line-height: 1.1666666667;
-    margin-top: 34px;
   }
 }
 
@@ -604,7 +705,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .customers .slogan {
-    margin-top: 34px;
     font-size: 36px;
     line-height: 1.1666666667;
   }
@@ -617,11 +717,6 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .customers .logos {
-    margin-bottom: 34px;
-  }
 }
 
 .customers .link {
@@ -669,6 +764,45 @@ textarea {
   padding-bottom: 60px;
 }
 
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-main {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-main {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -679,7 +813,6 @@ textarea {
   color: var(--hover-button-color);
   display: block;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .footer-logo .second-part {
@@ -723,11 +856,50 @@ textarea {
           transition-timing-function: var(--main-timing-function);
 }
 
+.footer .contacts-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer .contacts-main {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .contacts-main {
+    margin-right: 70px;
+    padding-bottom: 0;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socials-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+    margin-right: 93px;
+  }
+}
+
 .socials-main .slogan {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--secondary-main-text-color);
 }
@@ -736,6 +908,19 @@ textarea {
   padding-top: 20px;
 }
 
+.socials-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
 .socials-main .svg-items .svg-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -782,8 +967,17 @@ textarea {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--secondary-main-text-color);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .mailing .input {
@@ -791,10 +985,10 @@ textarea {
   -webkit-filter: drop-shadow(0px 4px 4px var(--shadow-main-color));
           filter: drop-shadow(0px 4px 4px var(--shadow-main-color));
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   background-color: var(--main-background-color);
-  margin-right: 12px;
   padding-left: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -810,8 +1004,21 @@ textarea {
 .mailing .input:hover, .mailing .input:focus {
   border-color: var(--hover-button-color);
 }
+@media screen and (min-width: 768px) {
+  .mailing .input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing .input {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+  }
+}
 
 .mailing .button {
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   background-color: var(--hover-button-color);
@@ -825,9 +1032,9 @@ textarea {
   -webkit-box-shadow: 0px 4px 4px var(--shadow-main-color);
           box-shadow: 0px 4px 4px var(--shadow-main-color);
   border-radius: 4px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -849,13 +1056,35 @@ textarea {
 }
 
 .main-buttons {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 326px;
+  gap: 15px 8px;
+}
+@media screen and (min-width: 768px) {
+  .main-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-buttons {
+    padding-top: 34px;
+    margin-bottom: 50px;
+  }
 }
 
 .main-buttons .button {
@@ -885,10 +1114,6 @@ textarea {
   border-radius: 4px;
 }
 
-.main-buttons .item + .item {
-  margin-left: 8px;
-}
-
 .examples .button.current {
   color: var(--secondary-main-text-color);
   background: var(--hover-button-color);
@@ -907,8 +1132,42 @@ textarea {
 }
 
 .main-examples .item {
-  width: 370px;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .main-examples .item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-examples .item {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-examples .description.padding {
+    padding-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-examples .description.padding {
+    padding-bottom: 0;
+  }
+}
+
+.main-examples .item img {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .main-examples .item img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-examples .item img {
+    width: 370px;
+  }
 }
 
 .main-examples .link {
@@ -997,8 +1256,8 @@ textarea {
 
 .modal {
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1012,6 +1271,12 @@ textarea {
           transition-duration: var(--main-duration-time);
   -webkit-transition-timing-function: var(--main-timing-function);
           transition-timing-function: var(--main-timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop {
@@ -1069,12 +1334,17 @@ textarea {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-button-color);
   display: block;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1173,38 +1443,60 @@ textarea:hover, textarea:focus {
 }
 .modal-label > textarea::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-label > textarea::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-label > textarea:-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-label > textarea::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-label > textarea::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .modal-label > textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-label > textarea::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-label > textarea:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-label > textarea::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .modal-label > textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
 }
 
 .modal-label-checkbox {
@@ -1221,15 +1513,30 @@ textarea:hover, textarea:focus {
 }
 
 .modal-checkbox-text {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-left: 8px;
 }
+@media screen and (min-width: 1200px) {
+  .modal-checkbox-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 
 .modal-checkbox-link {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
   color: var(--hover-button-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-comment {
@@ -1261,7 +1568,7 @@ textarea:hover, textarea:focus {
           justify-content: center;
   letter-spacing: 0.06em;
   color: var(--secondary-main-text-color);
-  margin-left: 124px;
+  margin-left: 85px;
   cursor: pointer;
   -webkit-transition-duration: var(--main-duration-time);
           transition-duration: var(--main-duration-time);
