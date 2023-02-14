@@ -1647,6 +1647,11 @@ textarea:hover, textarea:focus {
 .modal-confirm:hover, .modal-confirm:focus {
   background-color: #188ce8;
 }
+@media screen and (min-width: 1200px) {
+  .modal-confirm {
+    margin-left: 124px;
+  }
+}
 
 .modal-checkbox {
   position: absolute;
