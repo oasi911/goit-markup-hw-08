@@ -157,27 +157,42 @@
             <li class="item">
               <img
                 class="image"
-                src="images/box1.jpg"
+                srcset="
+                  ./images/desktop/boxes-1-370.png    1x,
+                  ./images/desktop/boxes-1-370@2x.png 2x
+                "
+                src="./images/desktop/boxes-1-370.png"
                 alt="what we are doing picture one"
                 width="370"
+                loading="lazy"
               />
               <h3 class="text">Десктопні додатки</h3>
             </li>
             <li class="item">
               <img
                 class="image"
-                src="images/box2.jpg"
+                srcset="
+                  ./images/desktop/boxes-2-370.png    1x,
+                  ./images/desktop/boxes-2-370@2x.png 2x
+                "
+                src="./images/desktop/boxes-2-370.png"
                 alt="what we are doing picture two"
                 width="370"
+                loading="lazy"
               />
               <h3 class="text">Мобільні додатки</h3>
             </li>
             <li class="item">
               <img
                 class="image"
-                src="images/box3.jpg"
+                srcset="
+                  ./images/desktop/boxes-3-370.png    1x,
+                  ./images/desktop/boxes-3-370@2x.png 2x
+                "
+                src="./images/desktop/boxes-3-370.png"
                 alt="what we are doing picture three"
                 width="370"
+                loading="lazy"
               />
               <h3 class="text">Дизайнерські рішення</h3>
             </li>
@@ -190,12 +205,39 @@
           <h2 class="our-team">Наша команда</h2>
           <ul class="main-team global-list">
             <li class="item">
-              <img
-                class="image"
-                src="images/person1.jpg"
-                alt="Ihor"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team-1-270.png    1x,
+                    ./images/desktop/team-1-270@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team-1-354.png    1x,
+                    ./images/tablet/team-1-354@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team-1-450.png    1x,
+                    ./images/mobile/team-1-450@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-1-450.png"
+                  alt="Ihor"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="info">
                 <h3 class="name">Ігор Дем'яненко</h3>
                 <p class="description">Product Designer</p>
@@ -235,12 +277,38 @@
             </li>
 
             <li class="item">
-              <img
-                class="image"
-                src="images/person2.jpg"
-                alt="Olga"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team-2-270.png    1x,
+                    ./images/desktop/team-2-270@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team-2-354.png    1x,
+                    ./images/tablet/team-2-354@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team-2-450.png    1x,
+                    ./images/mobile/team-2-450@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-2-450.png"
+                  alt="Olha"
+                  loading="lazy"
+                />
+              </picture>
               <div class="info">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="description">Frontend Developer</p>
@@ -280,12 +348,38 @@
             </li>
 
             <li class="item">
-              <img
-                class="image"
-                src="images/person3.jpg"
-                alt="Mykola"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team-3-270.png    1x,
+                    ./images/desktop/team-3-270@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team-3-354.png    1x,
+                    ./images/tablet/team-3-354@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team-3-450.png    1x,
+                    ./images/mobile/team-3-450@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-3-450.png"
+                  alt="Mykola"
+                  loading="lazy"
+                />
+              </picture>
               <div class="info">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="description">Marketing</p>
@@ -325,12 +419,38 @@
             </li>
 
             <li class="item">
-              <img
-                class="image"
-                src="images/person4.jpg"
-                alt="Mykhailo"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/team-4-270.png    1x,
+                    ./images/desktop/team-4-270@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team-4-354.png    1x,
+                    ./images/tablet/team-4-354@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team-4-450.png    1x,
+                    ./images/mobile/team-4-450@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="team__img"
+                  src="./images/mobile/team-4-450.png"
+                  alt="Mykhailo"
+                  loading="lazy"
+                />
+              </picture>
               <div class="info">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="description">UI Designer</p>

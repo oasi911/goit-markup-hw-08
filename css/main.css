@@ -352,12 +352,53 @@ textarea {
 }
 
 .banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/main-background.jpg);
-  background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/main-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/mobile/banner-bg-480.png);
+  background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/mobile/banner-bg-480.png);
   padding-bottom: 118px;
   padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 320px;
+  max-width: 768px;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/mobile/banner-bg-480@2x.png);
+    background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/mobile/banner-bg-480@2x.png);
+  }
+}
+@media screen and (min-width: 769px) {
+  .banner {
+    min-width: 768px;
+    max-width: 1200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/tablet/banner-bg-768.png);
+    background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/tablet/banner-bg-768.png);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/tablet/banner-bg-768@2x.png);
+    background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/tablet/banner-bg-768@2x.png);
+  }
+}
+@media screen and (min-width: 1201px) {
+  .banner {
+    min-width: 1200px;
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/desktop/banner-bg-1600.png);
+    background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/desktop/banner-bg-1600.png);
+  }
+}
+@media screen and (min-width: 1201px) and (min-device-pixel-ratio: 2), screen and (min-width: 1201px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1201px) and (min-resolution: 192dpi), screen and (min-width: 1201px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--background-gradient-color)), to(var(--background-gradient-color))), url(../images/desktop/banner-bg-1600@2x.png);
+    background-image: linear-gradient(var(--background-gradient-color), var(--background-gradient-color)), url(../images/desktop/banner-bg-1600@2x.png);
+  }
 }
 
 .banner__text {
