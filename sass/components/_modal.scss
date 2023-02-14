@@ -1,8 +1,11 @@
 .modal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 40px;
-
-  width: 450px;
-  min-height: 609px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,8 +19,8 @@
   transition-timing-function: var(--main-timing-function);
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -36,6 +39,10 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-form {
+  width: 100%;
 }
 
 .modal-btn {
@@ -91,7 +98,7 @@
   gap: 4px;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -233,7 +240,6 @@ textarea {
   justify-content: center;
   letter-spacing: 0.06em;
   color: var(--secondary-main-text-color);
-  margin-left: 85px;
   cursor: pointer;
   transition-duration: var(--main-duration-time);
   transition-timing-function: var(--main-timing-function);
@@ -241,10 +247,6 @@ textarea {
   &:hover,
   &:focus {
     background-color: #188ce8;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 124px;
   }
 }
 
